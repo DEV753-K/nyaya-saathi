@@ -1,0 +1,1553 @@
+[
+  {
+    "id": "pmkisan",
+    "name": "PM-Kisan",
+    "occupations": [
+      "farmer"
+    ],
+    "needs": [
+      "farming",
+      "money"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "₹6,000 per year in three installments for small farmer families.",
+    "benefit_hi": "छोटे किसान परिवारों को साल में ₹6,000, तीन किस्तों में।",
+    "docs": [
+      "Aadhaar",
+      "Land record",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://pmkisan.gov.in",
+      "online": true,
+      "en": [
+        "Open pmkisan.gov.in and click 'Farmers Corner' > 'New Farmer Registration'.",
+        "Enter Aadhaar number, mobile number and state, then verify with OTP.",
+        "Fill in land details and bank account, then submit.",
+        "Your state officials verify the form. Check status later under 'Know your status'."
+      ],
+      "hi": [
+        "pmkisan.gov.in खोलें और 'Farmers Corner' में 'New Farmer Registration' पर क्लिक करें।",
+        "आधार नंबर, मोबाइल नंबर और राज्य भरें, फिर OTP से जाँच करें।",
+        "ज़मीन की जानकारी और बैंक खाता भरकर सबमिट करें।",
+        "राज्य के अधिकारी फॉर्म जाँचते हैं। बाद में 'Know your status' में स्थिति देखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "land",
+        "en": "Do you or your family own farm land in your name?",
+        "hi": "क्या आपके या आपके परिवार के नाम पर खेती की ज़मीन है?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "pmjay",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "occupations": [],
+    "needs": [
+      "health"
+    ],
+    "max_income_lakh": 5,
+    "gender": null,
+    "min_age": null,
+    "max_age": null,
+    "benefit_en": "Health cover of ₹5 lakh per family per year in listed hospitals.",
+    "benefit_hi": "सूचीबद्ध अस्पतालों में प्रति परिवार प्रति वर्ष ₹5 लाख का इलाज कवर।",
+    "docs": [
+      "Aadhaar",
+      "Ration card",
+      "Family details"
+    ],
+    "apply": {
+      "url": "https://pmjay.gov.in",
+      "online": true,
+      "en": [
+        "Open pmjay.gov.in and use 'Am I Eligible' with your mobile number or ration card to check your name.",
+        "If eligible, visit the nearest Ayushman Mitra at a government hospital or Common Service Centre with Aadhaar and ration card.",
+        "They complete eKYC and print your Ayushman card on the spot."
+      ],
+      "hi": [
+        "pmjay.gov.in खोलें और 'Am I Eligible' में मोबाइल नंबर या राशन कार्ड से अपना नाम जाँचें।",
+        "पात्र हों तो आधार और राशन कार्ड लेकर नज़दीकी सरकारी अस्पताल या कॉमन सर्विस सेंटर में आयुष्मान मित्र से मिलें।",
+        "वे eKYC करके आयुष्मान कार्ड वहीं बना देते हैं।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "income",
+        "en": "What is your family's yearly income, roughly in lakh rupees?",
+        "hi": "आपके परिवार की सालाना आमदनी लगभग कितने लाख रुपये है?"
+      },
+      {
+        "field": "ration_card",
+        "en": "Do you have a ration card or an SECC listing?",
+        "hi": "क्या आपके पास राशन कार्ड या SECC सूची में नाम है?"
+      }
+    ]
+  },
+  {
+    "id": "pmay",
+    "name": "PM Awas Yojana",
+    "occupations": [],
+    "needs": [
+      "house"
+    ],
+    "max_income_lakh": 18,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Financial help to build or buy a pucca house for eligible families.",
+    "benefit_hi": "पात्र परिवारों को पक्का घर बनाने या खरीदने में आर्थिक सहायता।",
+    "docs": [
+      "Aadhaar",
+      "Income proof",
+      "Bank account",
+      "Land or property papers"
+    ],
+    "apply": {
+      "url": "https://pmaymis.gov.in",
+      "online": true,
+      "en": [
+        "For city homes use pmaymis.gov.in. For village homes, ask your Gram Panchayat, since rural applications go through the survey list.",
+        "Choose 'Citizen Assessment' and the category that fits you.",
+        "Enter Aadhaar, then fill in income, address and bank details and submit.",
+        "Note your application number to track it."
+      ],
+      "hi": [
+        "शहर के घर के लिए pmaymis.gov.in इस्तेमाल करें। गाँव के घर के लिए ग्राम पंचायत से पूछें, क्योंकि ग्रामीण आवेदन सर्वे सूची से होता है।",
+        "'Citizen Assessment' चुनें और अपनी श्रेणी चुनें।",
+        "आधार डालें, फिर आमदनी, पता और बैंक जानकारी भरकर सबमिट करें।",
+        "ट्रैक करने के लिए आवेदन नंबर लिख लें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "income",
+        "en": "What is your family's yearly income, roughly in lakh rupees?",
+        "hi": "आपके परिवार की सालाना आमदनी लगभग कितने लाख रुपये है?"
+      },
+      {
+        "field": "owns_house",
+        "en": "Does your family already own a pucca (concrete) house anywhere in India?",
+        "hi": "क्या आपके परिवार के नाम पर भारत में कहीं पहले से पक्का घर है?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "ssy",
+    "name": "Sukanya Samriddhi Yojana",
+    "occupations": [],
+    "needs": [
+      "daughter"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": null,
+    "max_age": null,
+    "benefit_en": "A savings account for a girl child with a government-set interest rate, for education and marriage.",
+    "benefit_hi": "बेटी की पढ़ाई और शादी के लिए सरकार द्वारा तय ब्याज वाला बचत खाता।",
+    "docs": [
+      "Girl's birth certificate",
+      "Parent's Aadhaar",
+      "Address proof"
+    ],
+    "apply": {
+      "url": "https://www.indiapost.gov.in",
+      "online": false,
+      "en": [
+        "This account is opened in person, not through an online form.",
+        "Visit any post office or authorised bank with the girl's birth certificate and parent's Aadhaar and address proof.",
+        "Fill the account opening form there and deposit the first amount."
+      ],
+      "hi": [
+        "यह खाता ऑनलाइन फॉर्म से नहीं, खुद जाकर खुलता है।",
+        "बेटी का जन्म प्रमाणपत्र और माता-पिता का आधार व पते का सबूत लेकर किसी भी डाकघर या अधिकृत बैंक जाएँ।",
+        "वहीं खाता खोलने का फॉर्म भरें और पहली राशि जमा करें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "daughter_age",
+        "en": "What is your daughter's current age?",
+        "hi": "आपकी बेटी की अभी उम्र क्या है?"
+      },
+      {
+        "field": "gender",
+        "en": "This scheme is for a girl child. Is the account for your daughter?",
+        "hi": "यह योजना बेटी के लिए है। क्या यह खाता आपकी बेटी के नाम पर खुलवाना है?"
+      }
+    ]
+  },
+  {
+    "id": "nsp",
+    "name": "National Scholarship Portal",
+    "occupations": [
+      "student"
+    ],
+    "needs": [
+      "education"
+    ],
+    "max_income_lakh": 8,
+    "gender": null,
+    "min_age": null,
+    "max_age": null,
+    "benefit_en": "Central and state scholarships for students, applied through one portal.",
+    "benefit_hi": "छात्रों के लिए केंद्र और राज्य की स्कॉलरशिप, एक ही पोर्टल से आवेदन।",
+    "docs": [
+      "Aadhaar",
+      "Marksheet",
+      "Income certificate",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://scholarships.gov.in",
+      "online": true,
+      "en": [
+        "Open scholarships.gov.in and click 'New Registration'.",
+        "Register with Aadhaar and mobile number, then log in with the ID you receive.",
+        "Fill the application form and upload marksheet, income certificate and bank details.",
+        "Submit, then your school or college verifies it. Check status after logging in."
+      ],
+      "hi": [
+        "scholarships.gov.in खोलें और 'New Registration' पर क्लिक करें।",
+        "आधार और मोबाइल नंबर से रजिस्टर करें, फिर मिले ID से लॉगिन करें।",
+        "आवेदन फॉर्म भरें और मार्कशीट, आय प्रमाणपत्र और बैंक जानकारी अपलोड करें।",
+        "सबमिट करें, फिर आपका स्कूल या कॉलेज उसे जाँचता है। लॉगिन करके स्थिति देखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "studying",
+        "en": "Are you currently studying in school or college?",
+        "hi": "क्या आप अभी स्कूल या कॉलेज में पढ़ रहे हैं?"
+      },
+      {
+        "field": "income",
+        "en": "What is your family's yearly income, roughly in lakh rupees?",
+        "hi": "आपके परिवार की सालाना आमदनी लगभग कितने लाख रुपये है?"
+      }
+    ]
+  },
+  {
+    "id": "mudra",
+    "name": "PM Mudra Yojana",
+    "occupations": [
+      "business"
+    ],
+    "needs": [
+      "loan"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Collateral-free loans for small businesses and shopkeepers.",
+    "benefit_hi": "छोटे कारोबारियों और दुकानदारों के लिए बिना गारंटी का लोन।",
+    "docs": [
+      "Aadhaar",
+      "PAN",
+      "Business details",
+      "Bank statement"
+    ],
+    "apply": {
+      "url": "https://www.mudra.org.in",
+      "online": true,
+      "en": [
+        "Open mudra.org.in or udyamimitra.in and choose the loan type (Shishu, Kishor or Tarun).",
+        "Or go to any bank, small finance bank or microfinance lender and ask for a Mudra loan.",
+        "Submit the form with ID proof, address proof, business details and bank statements.",
+        "No collateral is needed for Mudra loans."
+      ],
+      "hi": [
+        "mudra.org.in या udyamimitra.in खोलें और लोन का प्रकार चुनें (शिशु, किशोर या तरुण)।",
+        "या किसी भी बैंक, स्मॉल फाइनेंस बैंक या माइक्रोफाइनेंस संस्था में जाकर मुद्रा लोन माँगें।",
+        "पहचान, पते का सबूत, कारोबार की जानकारी और बैंक स्टेटमेंट के साथ फॉर्म जमा करें।",
+        "मुद्रा लोन में गिरवी रखने की ज़रूरत नहीं होती।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "business_type",
+        "en": "What kind of small business or shop do you have or want to start?",
+        "hi": "आपका छोटा कारोबार या दुकान किस तरह की है या शुरू करनी है?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "apy",
+    "name": "Atal Pension Yojana",
+    "occupations": [
+      "labourer"
+    ],
+    "needs": [
+      "pension"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 40,
+    "benefit_en": "A guaranteed monthly pension after 60 for workers outside the formal sector; join at age 18-40.",
+    "benefit_hi": "असंगठित क्षेत्र के कामगारों के लिए 60 साल के बाद तय मासिक पेंशन; 18-40 साल की उम्र में जुड़ें।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Mobile number"
+    ],
+    "apply": {
+      "url": "https://npscra.nsdl.co.in",
+      "online": false,
+      "en": [
+        "Go to the bank where you hold your savings account, or use its net banking or mobile app if it offers Atal Pension.",
+        "Ask for the Atal Pension Yojana form and choose your monthly pension amount.",
+        "Give Aadhaar and mobile number and allow auto-debit from your account."
+      ],
+      "hi": [
+        "जिस बैंक में आपका बचत खाता है वहाँ जाएँ, या उसके नेट बैंकिंग/मोबाइल ऐप से करें अगर वहाँ अटल पेंशन उपलब्ध हो।",
+        "अटल पेंशन योजना का फॉर्म माँगें और अपनी मासिक पेंशन राशि चुनें।",
+        "आधार और मोबाइल नंबर दें और खाते से ऑटो-डेबिट की अनुमति दें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age? (This scheme needs age 18 to 40 to join.)",
+        "hi": "आपकी उम्र क्या है? (इस योजना में जुड़ने के लिए उम्र 18 से 40 के बीच होनी चाहिए)"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a savings bank account or post office account?",
+        "hi": "क्या आपका बचत बैंक खाता या डाकघर खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "ujjwala",
+    "name": "PM Ujjwala Yojana",
+    "occupations": [],
+    "needs": [
+      "cooking"
+    ],
+    "max_income_lakh": null,
+    "gender": "female",
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Free LPG gas connection for women from poor households, so they can stop cooking on wood or coal.",
+    "benefit_hi": "गरीब परिवार की महिलाओं को मुफ़्त LPG गैस कनेक्शन, ताकि लकड़ी या कोयले पर खाना न बनाना पड़े।",
+    "docs": [
+      "Aadhaar",
+      "BPL ration card or similar proof",
+      "Bank account",
+      "Passport-size photo"
+    ],
+    "apply": {
+      "url": "https://pmuy.gov.in",
+      "online": true,
+      "en": [
+        "Open pmuy.gov.in and choose 'Apply for new Ujjwala 2.0 connection'.",
+        "Pick your gas company and the nearest distributor.",
+        "Fill the form, attach Aadhaar, ration card and bank details, then submit.",
+        "You can also take the same documents to your nearest LPG distributor."
+      ],
+      "hi": [
+        "pmuy.gov.in खोलें और 'Apply for new Ujjwala 2.0 connection' चुनें।",
+        "अपनी गैस कंपनी और नज़दीकी डीलर चुनें।",
+        "फॉर्म भरें, आधार, राशन कार्ड और बैंक जानकारी लगाकर सबमिट करें।",
+        "यही कागज़ लेकर आप सीधे नज़दीकी LPG डीलर के पास भी जा सकती हैं।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "gender",
+        "en": "Is the applicant a woman?",
+        "hi": "क्या आवेदक महिला हैं?"
+      },
+      {
+        "field": "ration_card",
+        "en": "Does your family have a BPL or ration card?",
+        "hi": "क्या आपके परिवार के पास BPL या राशन कार्ड है?"
+      }
+    ]
+  },
+  {
+    "id": "pmjjby",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "occupations": [],
+    "needs": [
+      "insurance"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 50,
+    "benefit_en": "Life insurance cover of ₹2 lakh for a very small yearly premium, paid straight from your bank account.",
+    "benefit_hi": "बहुत कम सालाना प्रीमियम पर ₹2 लाख का जीवन बीमा, सीधे बैंक खाते से कटता है।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Mobile number"
+    ],
+    "apply": {
+      "url": "https://jansuraksha.gov.in",
+      "online": false,
+      "en": [
+        "Visit your bank branch, or open your bank's net banking or app.",
+        "Ask for the PM Jeevan Jyoti Bima Yojana form and fill it.",
+        "Give consent for the yearly premium to be auto-debited from your account.",
+        "Keep the confirmation message or receipt."
+      ],
+      "hi": [
+        "अपनी बैंक शाखा जाएँ, या बैंक का नेट बैंकिंग या ऐप खोलें।",
+        "पीएम जीवन ज्योति बीमा योजना का फॉर्म माँगकर भरें।",
+        "सालाना प्रीमियम खाते से अपने-आप कटने की सहमति दें।",
+        "पुष्टि का संदेश या रसीद संभालकर रखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a savings bank account?",
+        "hi": "क्या आपका बचत बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "pmsby",
+    "name": "PM Suraksha Bima Yojana",
+    "occupations": [],
+    "needs": [
+      "insurance"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 70,
+    "benefit_en": "Accident insurance of ₹2 lakh for death or full disability, for a tiny yearly premium.",
+    "benefit_hi": "दुर्घटना में मृत्यु या पूर्ण विकलांगता पर ₹2 लाख का बीमा, बहुत कम सालाना प्रीमियम पर।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Mobile number"
+    ],
+    "apply": {
+      "url": "https://jansuraksha.gov.in",
+      "online": false,
+      "en": [
+        "Visit your bank branch, or use your bank's net banking or app.",
+        "Ask for the PM Suraksha Bima Yojana form and fill it.",
+        "Allow the small yearly premium to be auto-debited from your account.",
+        "Keep the confirmation for your records."
+      ],
+      "hi": [
+        "अपनी बैंक शाखा जाएँ, या बैंक का नेट बैंकिंग या ऐप इस्तेमाल करें।",
+        "पीएम सुरक्षा बीमा योजना का फॉर्म माँगकर भरें।",
+        "छोटा सालाना प्रीमियम खाते से अपने-आप कटने दें।",
+        "पुष्टि अपने रिकॉर्ड के लिए रखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a savings bank account?",
+        "hi": "क्या आपका बचत बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "pmfby",
+    "name": "PM Fasal Bima Yojana",
+    "occupations": [
+      "farmer"
+    ],
+    "needs": [
+      "farming",
+      "insurance"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Crop insurance that pays farmers when floods, drought, pests or disease damage the crop.",
+    "benefit_hi": "बाढ़, सूखा, कीट या बीमारी से फसल खराब होने पर किसानों को बीमा का पैसा।",
+    "docs": [
+      "Aadhaar",
+      "Land record or lease paper",
+      "Bank account",
+      "Sowing details"
+    ],
+    "apply": {
+      "url": "https://pmfby.gov.in",
+      "online": true,
+      "en": [
+        "Open pmfby.gov.in and go to 'Farmer Corner'.",
+        "Register with your mobile number and Aadhaar, then log in.",
+        "Choose your crop and season, add land and bank details, and pay the small premium.",
+        "You can also apply through your bank, a CSC centre, or the agriculture office."
+      ],
+      "hi": [
+        "pmfby.gov.in खोलें और 'Farmer Corner' में जाएँ।",
+        "मोबाइल नंबर और आधार से रजिस्टर करके लॉगिन करें।",
+        "फसल और सीज़न चुनें, ज़मीन और बैंक की जानकारी भरें और छोटा प्रीमियम दें।",
+        "आप बैंक, CSC केंद्र या कृषि कार्यालय से भी आवेदन कर सकते हैं।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "land",
+        "en": "Do you farm land, owned or on lease?",
+        "hi": "क्या आप अपनी या पट्टे की ज़मीन पर खेती करते हैं?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card",
+    "occupations": [
+      "farmer"
+    ],
+    "needs": [
+      "farming"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 75,
+    "benefit_en": "Easy farm loans at low interest for seeds, fertiliser and other farming costs, with a simple card.",
+    "benefit_hi": "बीज, खाद और खेती के दूसरे खर्च के लिए कम ब्याज पर आसान कर्ज़, एक सरल कार्ड के साथ।",
+    "docs": [
+      "Aadhaar",
+      "Land record",
+      "Bank account",
+      "Passport-size photo"
+    ],
+    "apply": {
+      "url": "https://pmkisan.gov.in",
+      "online": false,
+      "en": [
+        "Go to your nearest bank branch or cooperative bank and ask for a Kisan Credit Card.",
+        "Carry your Aadhaar, land papers and photo.",
+        "Fill the short KCC form. PM-Kisan farmers can use a simplified form.",
+        "The bank checks your papers and issues the card."
+      ],
+      "hi": [
+        "अपनी नज़दीकी बैंक शाखा या सहकारी बैंक जाएँ और किसान क्रेडिट कार्ड माँगें।",
+        "आधार, ज़मीन के कागज़ और फोटो साथ ले जाएँ।",
+        "छोटा KCC फॉर्म भरें। पीएम-किसान वाले किसानों के लिए आसान फॉर्म है।",
+        "बैंक कागज़ जाँचकर कार्ड जारी करता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "land",
+        "en": "Do you farm land, owned or on lease?",
+        "hi": "क्या आप अपनी या पट्टे की ज़मीन पर खेती करते हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "pmvishwakarma",
+    "name": "PM Vishwakarma Yojana",
+    "occupations": [
+      "artisan"
+    ],
+    "needs": [
+      "skill",
+      "loan"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Training, a toolkit grant and low-interest loans for traditional artisans such as carpenters, tailors, potters and barbers.",
+    "benefit_hi": "बढ़ई, दर्ज़ी, कुम्हार, नाई जैसे पारंपरिक कारीगरों के लिए ट्रेनिंग, औज़ार की मदद और कम ब्याज पर कर्ज़।",
+    "docs": [
+      "Aadhaar",
+      "Mobile number linked to Aadhaar",
+      "Bank account",
+      "Proof of your trade"
+    ],
+    "apply": {
+      "url": "https://pmvishwakarma.gov.in",
+      "online": true,
+      "en": [
+        "Open pmvishwakarma.gov.in and choose 'Artisan Registration'.",
+        "Verify your Aadhaar and mobile number with OTP.",
+        "Select your trade, fill your details and submit.",
+        "After verification you get an ID card, training and the toolkit benefit."
+      ],
+      "hi": [
+        "pmvishwakarma.gov.in खोलें और 'Artisan Registration' चुनें।",
+        "आधार और मोबाइल नंबर OTP से जाँचें।",
+        "अपना काम चुनें, जानकारी भरें और सबमिट करें।",
+        "जाँच के बाद पहचान पत्र, ट्रेनिंग और औज़ार की मदद मिलती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "business_type",
+        "en": "Which traditional trade do you work in (for example carpenter, tailor, potter)?",
+        "hi": "आप कौन सा पारंपरिक काम करते हैं (जैसे बढ़ई, दर्ज़ी, कुम्हार)?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "pmmvy",
+    "name": "PM Matru Vandana Yojana",
+    "occupations": [],
+    "needs": [
+      "pregnancy"
+    ],
+    "max_income_lakh": null,
+    "gender": "female",
+    "min_age": 19,
+    "max_age": null,
+    "benefit_en": "Cash support in installments for a pregnant or nursing mother, to help with food and rest around childbirth.",
+    "benefit_hi": "गर्भवती या स्तनपान कराने वाली माँ को किस्तों में नकद मदद, ताकि पोषण और आराम का ध्यान रखा जा सके।",
+    "docs": [
+      "Aadhaar",
+      "Bank or post office account",
+      "Mother and Child Protection card",
+      "Pregnancy registration proof"
+    ],
+    "apply": {
+      "url": "https://pmmvy.wcd.gov.in",
+      "online": true,
+      "en": [
+        "Register the pregnancy at your Anganwadi centre or health centre.",
+        "Fill the PMMVY application form there, or on pmmvy.wcd.gov.in.",
+        "Attach Aadhaar, bank details and the Mother and Child Protection card.",
+        "Money is sent to your account in installments as the stages are completed."
+      ],
+      "hi": [
+        "अपने आँगनवाड़ी या स्वास्थ्य केंद्र में गर्भावस्था का पंजीकरण कराएँ।",
+        "वहीं या pmmvy.wcd.gov.in पर PMMVY का फॉर्म भरें।",
+        "आधार, बैंक जानकारी और मातृ-शिशु सुरक्षा कार्ड लगाएँ।",
+        "चरण पूरे होने पर पैसा किस्तों में आपके खाते में आता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "gender",
+        "en": "Is the applicant a woman?",
+        "hi": "क्या आवेदक महिला हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "ignoaps",
+    "name": "Indira Gandhi National Old Age Pension",
+    "occupations": [],
+    "needs": [
+      "pension"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 60,
+    "max_age": null,
+    "benefit_en": "Monthly pension for poor senior citizens aged 60 and above. Many states add their own amount on top.",
+    "benefit_hi": "60 साल और उससे ऊपर के गरीब बुज़ुर्गों के लिए मासिक पेंशन। कई राज्य अपनी तरफ से रकम भी बढ़ाते हैं।",
+    "docs": [
+      "Aadhaar",
+      "Age proof",
+      "BPL or ration card",
+      "Bank account",
+      "Passport-size photo"
+    ],
+    "apply": {
+      "url": "https://nsap.nic.in",
+      "online": false,
+      "en": [
+        "Go to your gram panchayat, ward office or block office, or your state's social welfare portal.",
+        "Ask for the old age pension form and fill it.",
+        "Attach age proof, BPL or ration card, Aadhaar and bank details.",
+        "After verification the pension is paid to your bank account each month."
+      ],
+      "hi": [
+        "अपनी ग्राम पंचायत, वार्ड कार्यालय या ब्लॉक कार्यालय जाएँ, या राज्य का समाज कल्याण पोर्टल देखें।",
+        "वृद्धावस्था पेंशन का फॉर्म माँगकर भरें।",
+        "उम्र का सबूत, BPL या राशन कार्ड, आधार और बैंक जानकारी लगाएँ।",
+        "जाँच के बाद पेंशन हर महीने बैंक खाते में आती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "ration_card",
+        "en": "Does your family have a BPL or ration card?",
+        "hi": "क्या आपके परिवार के पास BPL या राशन कार्ड है?"
+      }
+    ]
+  },
+  {
+    "id": "pmjdy",
+    "name": "PM Jan Dhan Yojana",
+    "occupations": [],
+    "needs": [
+      "savings"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 10,
+    "max_age": null,
+    "benefit_en": "A free zero-balance bank account with a RuPay debit card and built-in accident insurance.",
+    "benefit_hi": "मुफ़्त ज़ीरो-बैलेंस बैंक खाता, RuPay डेबिट कार्ड और दुर्घटना बीमा के साथ।",
+    "docs": [
+      "Aadhaar",
+      "Passport-size photo",
+      "Address proof"
+    ],
+    "apply": {
+      "url": "https://pmjdy.gov.in",
+      "online": false,
+      "en": [
+        "Visit any bank branch or a Bank Mitra (bank agent) near you.",
+        "Ask for a Jan Dhan account form and fill it.",
+        "Attach Aadhaar and a photo.",
+        "You get a passbook and a RuPay debit card."
+      ],
+      "hi": [
+        "अपने पास की किसी भी बैंक शाखा या बैंक मित्र के पास जाएँ।",
+        "जन धन खाते का फॉर्म माँगकर भरें।",
+        "आधार और फोटो लगाएँ।",
+        "आपको पासबुक और RuPay डेबिट कार्ड मिलता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "standup",
+    "name": "Stand-Up India",
+    "occupations": [
+      "business"
+    ],
+    "needs": [],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Bank loans of ₹10 lakh to ₹1 crore for women and SC/ST first-time entrepreneurs starting a new business.",
+    "benefit_hi": "नया व्यवसाय शुरू करने वाली महिलाओं और SC/ST उद्यमियों के लिए ₹10 लाख से ₹1 करोड़ तक का बैंक लोन।",
+    "docs": [
+      "Aadhaar",
+      "PAN card",
+      "Caste certificate (SC/ST applicants)",
+      "Business plan",
+      "Address proof"
+    ],
+    "apply": {
+      "url": "https://www.standupmitra.in",
+      "online": true,
+      "en": [
+        "Open standupmitra.in and register.",
+        "Fill the loan application with your business plan.",
+        "Choose a bank branch, or go to any bank branch directly.",
+        "The bank checks your papers and decides on the loan."
+      ],
+      "hi": [
+        "standupmitra.in खोलकर रजिस्टर करें।",
+        "अपने बिज़नेस प्लान के साथ लोन आवेदन भरें।",
+        "बैंक शाखा चुनें, या सीधे किसी भी बैंक शाखा में जाएँ।",
+        "बैंक कागज़ जाँचकर लोन पर फैसला करता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "nrlm",
+    "name": "DAY-NRLM (Women Self Help Groups)",
+    "occupations": [],
+    "needs": [
+      "women"
+    ],
+    "max_income_lakh": null,
+    "gender": "female",
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Join a women's self-help group for savings, low-interest loans and livelihood training.",
+    "benefit_hi": "महिला स्वयं सहायता समूह से जुड़ें: बचत, कम ब्याज पर लोन और रोज़गार की ट्रेनिंग।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Passport-size photo"
+    ],
+    "apply": {
+      "url": "https://aajeevika.gov.in",
+      "online": false,
+      "en": [
+        "Contact your gram panchayat or block office and ask for the NRLM or Aajeevika team.",
+        "Join an existing self-help group, or form one with 10 to 20 women.",
+        "Open a group bank account and start regular savings.",
+        "After some months, apply for a group loan through the bank."
+      ],
+      "hi": [
+        "अपनी ग्राम पंचायत या ब्लॉक कार्यालय जाकर NRLM या आजीविका टीम के बारे में पूछें।",
+        "किसी मौजूदा स्वयं सहायता समूह से जुड़ें, या 10 से 20 महिलाओं के साथ नया बनाएँ।",
+        "समूह का बैंक खाता खोलें और नियमित बचत शुरू करें।",
+        "कुछ महीने बाद बैंक से समूह लोन के लिए आवेदन करें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "gender",
+        "en": "Is the applicant a woman?",
+        "hi": "क्या आवेदक महिला हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "svanidhi",
+    "name": "PM SVANidhi (Street Vendors)",
+    "occupations": [
+      "vendor"
+    ],
+    "needs": [],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Collateral-free working capital loans for street vendors, with bigger loans after timely repayment.",
+    "benefit_hi": "ठेला या रेहड़ी वालों के लिए बिना गारंटी का कार्यशील पूंजी लोन, समय पर चुकाने पर बड़ा लोन।",
+    "docs": [
+      "Aadhaar",
+      "Mobile number linked to Aadhaar",
+      "Vending certificate or recommendation letter",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://pmsvanidhi.mohua.gov.in",
+      "online": true,
+      "en": [
+        "Open pmsvanidhi.mohua.gov.in and choose to apply for a loan.",
+        "Verify with your Aadhaar and mobile OTP.",
+        "Pick the lending bank and submit the form.",
+        "No vending certificate? Ask your municipality for a letter of recommendation."
+      ],
+      "hi": [
+        "pmsvanidhi.mohua.gov.in खोलकर लोन के लिए आवेदन चुनें।",
+        "आधार और मोबाइल OTP से जाँच करें।",
+        "लोन देने वाला बैंक चुनकर फॉर्म जमा करें।",
+        "वेंडिंग सर्टिफिकेट नहीं है? नगर पालिका से सिफारिश पत्र माँगें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "vidyalaxmi",
+    "name": "PM Vidyalaxmi (Education Loan)",
+    "occupations": [
+      "student"
+    ],
+    "needs": [
+      "education"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": null,
+    "max_age": null,
+    "benefit_en": "Collateral-free education loans for students in quality higher education institutions, with interest support for lower-income families.",
+    "benefit_hi": "अच्छे उच्च शिक्षा संस्थानों में पढ़ने वाले छात्रों के लिए बिना गारंटी का एजुकेशन लोन, कम आय वाले परिवारों को ब्याज में मदद।",
+    "docs": [
+      "Aadhaar",
+      "Admission letter",
+      "Marksheets",
+      "Income certificate",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://pmvidyalaxmi.co.in",
+      "online": true,
+      "en": [
+        "Open pmvidyalaxmi.co.in and register.",
+        "Fill the common education loan application and upload your papers.",
+        "Choose up to 3 banks to apply to.",
+        "Track your application on the same website."
+      ],
+      "hi": [
+        "pmvidyalaxmi.co.in खोलकर रजिस्टर करें।",
+        "कॉमन एजुकेशन लोन फॉर्म भरें और कागज़ अपलोड करें।",
+        "आवेदन के लिए अधिकतम 3 बैंक चुनें।",
+        "उसी वेबसाइट पर अपना आवेदन ट्रैक करें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "studying",
+        "en": "Are you admitted to a college or institute?",
+        "hi": "क्या आपका किसी कॉलेज या संस्थान में दाखिला हुआ है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "ddugky",
+    "name": "DDU-GKY (Free Skill Training and Jobs)",
+    "occupations": [],
+    "needs": [
+      "skill",
+      "job"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 15,
+    "max_age": 45,
+    "benefit_en": "Free skill training and job placement for rural youth aged 15 to 35 (up to 45 for women, SC/ST and persons with disabilities).",
+    "benefit_hi": "ग्रामीण युवाओं (15 से 35 साल, महिलाओं, SC/ST और दिव्यांगों के लिए 45 साल तक) को मुफ़्त स्किल ट्रेनिंग और नौकरी में मदद।",
+    "docs": [
+      "Aadhaar",
+      "Age proof",
+      "Education certificate",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://ddugky.gov.in",
+      "online": true,
+      "en": [
+        "Open ddugky.gov.in and search for a training centre near you.",
+        "Register as a candidate with your Aadhaar and details.",
+        "Choose a course and join the training centre.",
+        "After training you get a certificate and placement support."
+      ],
+      "hi": [
+        "ddugky.gov.in खोलकर अपने पास का ट्रेनिंग सेंटर खोजें।",
+        "आधार और जानकारी के साथ उम्मीदवार के रूप में रजिस्टर करें।",
+        "कोर्स चुनकर ट्रेनिंग सेंटर से जुड़ें।",
+        "ट्रेनिंग के बाद सर्टिफिकेट और नौकरी में मदद मिलती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "mgnrega",
+    "name": "MGNREGA (100 Days of Work)",
+    "occupations": [
+      "labourer"
+    ],
+    "needs": [
+      "job"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Guaranteed 100 days of paid manual work every year for rural households that ask for it.",
+    "benefit_hi": "गाँव के परिवारों को माँगने पर हर साल 100 दिन के काम की गारंटी, मज़दूरी के साथ।",
+    "docs": [
+      "Aadhaar",
+      "Passport-size photo",
+      "Bank or post office account",
+      "Address proof"
+    ],
+    "apply": {
+      "url": "https://nrega.nic.in",
+      "online": false,
+      "en": [
+        "Go to your gram panchayat and apply for a free job card with a photo.",
+        "You get the job card within 15 days.",
+        "Give a written request for work.",
+        "Work is given within 15 days, or you get an unemployment allowance."
+      ],
+      "hi": [
+        "अपनी ग्राम पंचायत जाकर फोटो के साथ मुफ़्त जॉब कार्ड के लिए आवेदन करें।",
+        "जॉब कार्ड 15 दिन में मिल जाता है।",
+        "काम के लिए लिखित माँग दें।",
+        "15 दिन में काम मिलता है, नहीं तो बेरोज़गारी भत्ता मिलता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "nfsa",
+    "name": "Ration Card (National Food Security Act)",
+    "occupations": [],
+    "needs": [
+      "food"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Subsidised or free foodgrain every month for eligible households through a ration card.",
+    "benefit_hi": "राशन कार्ड के ज़रिए पात्र परिवारों को हर महीने सस्ता या मुफ़्त अनाज।",
+    "docs": [
+      "Aadhaar of all family members",
+      "Address proof",
+      "Income proof",
+      "Passport-size photo"
+    ],
+    "apply": {
+      "url": "https://nfsa.gov.in",
+      "online": true,
+      "en": [
+        "Open your state's food and civil supplies portal (links on nfsa.gov.in), or go to a Jan Seva Kendra.",
+        "Fill the ration card application.",
+        "Attach Aadhaar of all members, address proof and photo.",
+        "An officer verifies it and the card is issued."
+      ],
+      "hi": [
+        "अपने राज्य का खाद्य एवं नागरिक आपूर्ति पोर्टल (nfsa.gov.in पर लिंक) खोलें, या जन सेवा केंद्र जाएँ।",
+        "राशन कार्ड का आवेदन भरें।",
+        "सभी सदस्यों का आधार, पते का सबूत और फोटो लगाएँ।",
+        "अधिकारी जाँच करता है और कार्ड जारी होता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "udid",
+    "name": "UDID Card (Persons with Disabilities)",
+    "occupations": [],
+    "needs": [
+      "disability"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": null,
+    "max_age": null,
+    "benefit_en": "One national ID card for persons with disabilities, to claim pension, travel concession and other benefits.",
+    "benefit_hi": "दिव्यांगजनों के लिए एक राष्ट्रीय पहचान पत्र, पेंशन, यात्रा छूट और दूसरे लाभों के लिए।",
+    "docs": [
+      "Aadhaar",
+      "Passport-size photo",
+      "Signature",
+      "Medical certificate, if available"
+    ],
+    "apply": {
+      "url": "https://www.swavlambancard.gov.in",
+      "online": true,
+      "en": [
+        "Open swavlambancard.gov.in and choose to apply for a new card.",
+        "Fill your details and upload photo, signature and Aadhaar.",
+        "Visit the hospital for assessment on the date given.",
+        "The card is issued after approval."
+      ],
+      "hi": [
+        "swavlambancard.gov.in खोलकर नए कार्ड के लिए आवेदन चुनें।",
+        "जानकारी भरें और फोटो, हस्ताक्षर और आधार अपलोड करें।",
+        "दी गई तारीख पर जाँच के लिए अस्पताल जाएँ।",
+        "मंज़ूरी के बाद कार्ड जारी होता है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "ayvvy",
+    "name": "Ayushman Vay Vandana (Age 70+)",
+    "occupations": [],
+    "needs": [
+      "senior"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 70,
+    "max_age": null,
+    "benefit_en": "Free health cover of up to ₹5 lakh a year for every citizen aged 70 and above, whatever their income.",
+    "benefit_hi": "70 साल और उससे ऊपर के हर नागरिक को आय की परवाह किए बिना हर साल ₹5 लाख तक का मुफ़्त स्वास्थ्य बीमा।",
+    "docs": [
+      "Aadhaar",
+      "Mobile number"
+    ],
+    "apply": {
+      "url": "https://beneficiary.nha.gov.in",
+      "online": true,
+      "en": [
+        "Open beneficiary.nha.gov.in or the Ayushman app.",
+        "Choose Vay Vandana and verify with Aadhaar and OTP.",
+        "Download your Vay Vandana card.",
+        "Or visit an Ayushman Mitra at an empanelled hospital."
+      ],
+      "hi": [
+        "beneficiary.nha.gov.in या आयुष्मान ऐप खोलें।",
+        "वय वंदना चुनकर आधार और OTP से जाँच करें।",
+        "अपना वय वंदना कार्ड डाउनलोड करें।",
+        "या पैनल के अस्पताल में आयुष्मान मित्र से मिलें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "pmkmy",
+    "name": "PM Kisan Maandhan Yojana",
+    "occupations": [
+      "farmer"
+    ],
+    "needs": [
+      "pension"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 40,
+    "benefit_en": "Monthly pension of ₹3,000 after age 60 for small and marginal farmers who join between 18 and 40.",
+    "benefit_hi": "18 से 40 साल में जुड़ने वाले छोटे और सीमांत किसानों को 60 साल के बाद हर महीने ₹3,000 की पेंशन।",
+    "docs": [
+      "Aadhaar",
+      "Land record",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://maandhan.in",
+      "online": true,
+      "en": [
+        "Visit your nearest CSC centre, or open maandhan.in.",
+        "Enter your Aadhaar, land and bank details.",
+        "Choose your monthly contribution based on your age.",
+        "Keep the enrollment receipt."
+      ],
+      "hi": [
+        "अपने नज़दीकी CSC केंद्र जाएँ, या maandhan.in खोलें।",
+        "आधार, ज़मीन और बैंक की जानकारी भरें।",
+        "अपनी उम्र के हिसाब से मासिक योगदान चुनें।",
+        "पंजीकरण की रसीद संभालकर रखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "land",
+        "en": "Do you farm land, owned or on lease?",
+        "hi": "क्या आप अपनी या पट्टे की ज़मीन पर खेती करते हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "eshram",
+    "name": "e-Shram (Unorganised Workers)",
+    "occupations": [
+      "labourer"
+    ],
+    "needs": [
+      "job"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 16,
+    "max_age": 59,
+    "benefit_en": "Free registration and an e-Shram ID for unorganised workers, which helps you reach social security services.",
+    "benefit_hi": "असंगठित कामगारों के लिए मुफ़्त पंजीकरण और e-Shram पहचान संख्या, जिससे सामाजिक सुरक्षा सेवाओं तक पहुँच मिलती है।",
+    "docs": [
+      "Aadhaar",
+      "Aadhaar-linked mobile number",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://eshram.gov.in",
+      "online": true,
+      "en": [
+        "Open eshram.gov.in and choose 'Register on e-Shram'.",
+        "Verify with your Aadhaar-linked mobile number and OTP.",
+        "Enter your occupation and bank details.",
+        "Save or download your e-Shram card. A CSC can also help."
+      ],
+      "hi": [
+        "eshram.gov.in खोलकर 'Register on e-Shram' चुनें।",
+        "आधार से जुड़े मोबाइल नंबर और OTP से जाँच करें।",
+        "अपना काम और बैंक जानकारी भरें।",
+        "e-Shram कार्ड सेव या डाउनलोड करें। CSC से भी मदद मिलती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "pmksy",
+    "name": "PM Krishi Sinchayee Yojana",
+    "occupations": [
+      "farmer"
+    ],
+    "needs": [
+      "irrigation"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Support for irrigation and water-saving methods like drip and sprinkler on your farm.",
+    "benefit_hi": "खेत में सिंचाई और ड्रिप या स्प्रिंकलर जैसे पानी बचाने वाले तरीकों के लिए सहायता।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Land record"
+    ],
+    "apply": {
+      "url": "https://pmksy.gov.in",
+      "online": false,
+      "en": [
+        "Visit your state agriculture or irrigation department, or your block agriculture office.",
+        "Ask which PMKSY component, such as drip or sprinkler, is open in your state.",
+        "Submit land records, Aadhaar and bank details.",
+        "Follow the local verification and subsidy process."
+      ],
+      "hi": [
+        "अपने राज्य के कृषि या सिंचाई विभाग, या ब्लॉक कृषि कार्यालय जाएँ।",
+        "पूछें कि आपके राज्य में PMKSY का कौन सा हिस्सा (ड्रिप, स्प्रिंकलर) खुला है।",
+        "ज़मीन के कागज़, आधार और बैंक जानकारी जमा करें।",
+        "स्थानीय जाँच और सब्सिडी की प्रक्रिया पूरी करें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "land",
+        "en": "Do you farm land, owned or on lease?",
+        "hi": "क्या आप अपनी या पट्टे की ज़मीन पर खेती करते हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  },
+  {
+    "id": "pmsym",
+    "name": "PM Shram Yogi Maandhan",
+    "occupations": [
+      "labourer"
+    ],
+    "needs": [
+      "pension"
+    ],
+    "max_income_lakh": 1.8,
+    "gender": null,
+    "min_age": 18,
+    "max_age": 40,
+    "benefit_en": "Assured pension of ₹3,000 a month after age 60 for unorganised workers earning up to ₹15,000 a month.",
+    "benefit_hi": "₹15,000 महीने तक कमाने वाले असंगठित कामगारों को 60 साल के बाद ₹3,000 मासिक पेंशन।",
+    "docs": [
+      "Aadhaar",
+      "Savings bank or Jan Dhan account",
+      "Mobile number"
+    ],
+    "apply": {
+      "url": "https://maandhan.in",
+      "online": true,
+      "en": [
+        "Go to your nearest CSC centre, or check maandhan.in.",
+        "Give Aadhaar and bank details.",
+        "Choose your monthly contribution based on your age.",
+        "Keep the enrollment receipt."
+      ],
+      "hi": [
+        "अपने नज़दीकी CSC केंद्र जाएँ, या maandhan.in देखें।",
+        "आधार और बैंक जानकारी दें।",
+        "अपनी उम्र के हिसाब से मासिक योगदान चुनें।",
+        "पंजीकरण की रसीद संभालकर रखें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "income",
+        "en": "What is your family's yearly income, roughly in lakh rupees?",
+        "hi": "आपके परिवार की सालाना आमदनी लगभग कितने लाख रुपये है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "ignwps",
+    "name": "Indira Gandhi Widow Pension",
+    "occupations": [
+      "widow"
+    ],
+    "needs": [
+      "pension"
+    ],
+    "max_income_lakh": null,
+    "gender": "female",
+    "min_age": 40,
+    "max_age": 79,
+    "benefit_en": "Monthly pension for widowed women from poor households, aged 40 to 79. States may add their own amount.",
+    "benefit_hi": "गरीब परिवारों की 40 से 79 साल की विधवा महिलाओं को मासिक पेंशन। राज्य अपनी तरफ से रकम बढ़ा सकते हैं।",
+    "docs": [
+      "Aadhaar",
+      "Age proof",
+      "Husband's death certificate",
+      "BPL or ration card",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://nsap.nic.in",
+      "online": false,
+      "en": [
+        "Go to your gram panchayat, municipality or block welfare office.",
+        "Ask for the widow pension form and fill it.",
+        "Attach the death certificate, age proof, BPL or ration card and bank details.",
+        "After verification the pension comes to your bank account."
+      ],
+      "hi": [
+        "अपनी ग्राम पंचायत, नगर निकाय या ब्लॉक कल्याण कार्यालय जाएँ।",
+        "विधवा पेंशन का फॉर्म माँगकर भरें।",
+        "मृत्यु प्रमाणपत्र, उम्र का सबूत, BPL या राशन कार्ड और बैंक जानकारी लगाएँ।",
+        "जाँच के बाद पेंशन बैंक खाते में आती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "gender",
+        "en": "Is the applicant a woman?",
+        "hi": "क्या आवेदक महिला हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "ration_card",
+        "en": "Does your family have a BPL or ration card?",
+        "hi": "क्या आपके परिवार के पास BPL या राशन कार्ड है?"
+      }
+    ]
+  },
+  {
+    "id": "pmmsy",
+    "name": "PM Matsya Sampada Yojana",
+    "occupations": [
+      "fisher"
+    ],
+    "needs": [
+      "fisheries"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Support for fishers and fish farmers: boats, nets, fish ponds, cold storage and insurance.",
+    "benefit_hi": "मछुआरों और मत्स्य पालकों के लिए नाव, जाल, तालाब, कोल्ड स्टोरेज और बीमा में सहायता।",
+    "docs": [
+      "Aadhaar",
+      "Bank account",
+      "Fishing licence or fisher ID, if you have one"
+    ],
+    "apply": {
+      "url": "https://pmmsy.dof.gov.in",
+      "online": false,
+      "en": [
+        "Contact your state or district fisheries department.",
+        "Ask which PMMSY component, such as boats, ponds or nets, suits you.",
+        "Submit Aadhaar, bank details and project details.",
+        "Follow the department's verification and subsidy steps."
+      ],
+      "hi": [
+        "अपने राज्य या ज़िले के मत्स्य विभाग से संपर्क करें।",
+        "पूछें कि नाव, तालाब या जाल में से कौन सा घटक आपके लिए ठीक है।",
+        "आधार, बैंक जानकारी और प्रोजेक्ट की जानकारी जमा करें।",
+        "विभाग की जाँच और सब्सिडी की प्रक्रिया पूरी करें।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      },
+      {
+        "field": "bank_account",
+        "en": "Do you have a bank account?",
+        "hi": "क्या आपका बैंक खाता है?"
+      }
+    ]
+  },
+  {
+    "id": "pmegp",
+    "name": "PMEGP (Start Your Own Enterprise)",
+    "occupations": [
+      "business"
+    ],
+    "needs": [
+      "self_employment"
+    ],
+    "max_income_lakh": null,
+    "gender": null,
+    "min_age": 18,
+    "max_age": null,
+    "benefit_en": "Bank loan with a government subsidy for starting a new small manufacturing or service enterprise.",
+    "benefit_hi": "नया छोटा उद्योग या सेवा कारोबार शुरू करने के लिए बैंक लोन के साथ सरकारी सब्सिडी।",
+    "docs": [
+      "Aadhaar",
+      "PAN card",
+      "Project report",
+      "Caste or special category certificate, if applicable",
+      "Bank account"
+    ],
+    "apply": {
+      "url": "https://www.kviconline.gov.in/pmegpeportal",
+      "online": true,
+      "en": [
+        "Open kviconline.gov.in/pmegpeportal and register as an applicant.",
+        "Fill the online form with your project details and upload documents.",
+        "The form goes to the agency and bank for checking.",
+        "If approved, the bank gives the loan and the subsidy is adjusted."
+      ],
+      "hi": [
+        "kviconline.gov.in/pmegpeportal खोलकर आवेदक के रूप में रजिस्टर करें।",
+        "प्रोजेक्ट की जानकारी के साथ ऑनलाइन फॉर्म भरें और कागज़ अपलोड करें।",
+        "फॉर्म संबंधित एजेंसी और बैंक के पास जाँच के लिए जाता है।",
+        "मंज़ूरी मिलने पर बैंक लोन देता है और सब्सिडी समायोजित होती है।"
+      ]
+    },
+    "questions": [
+      {
+        "field": "business_type",
+        "en": "What business do you want to start?",
+        "hi": "आप कौन सा कारोबार शुरू करना चाहते हैं?"
+      },
+      {
+        "field": "age",
+        "en": "What is your age?",
+        "hi": "आपकी उम्र क्या है?"
+      }
+    ]
+  }
+]

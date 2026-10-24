@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nyaya Saathi – Find the government schemes you qualify for</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f7fb;--surface:#ffffff;--ink:#14213d;--muted:#5a6479;--line:#dde2ee;
+  --accent:#0f7b6c;--accent2:#1f8ef1;--accent-ink:#ffffff;--mark:#f2b134;--user:#14213d;--user-ink:#ffffff;
+  --card1:#eafaf4;--card2:#eef3ff;--card3:#fff6e8;--shadow:0 10px 30px rgba(20,33,61,.08);
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1424;--surface:#161e33;--ink:#e8ecf6;--muted:#9aa6c0;--line:#2a3555;
+  --accent:#3cc4ae;--accent2:#5fb1ff;--accent-ink:#06211c;--mark:#f2b134;--user:#3cc4ae;--user-ink:#06211c;
+  --card1:#122a26;--card2:#121c33;--card3:#2a2416;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0e1424;--surface:#161e33;--ink:#e8ecf6;--muted:#9aa6c0;--line:#2a3555;
+  --accent:#3cc4ae;--accent2:#5fb1ff;--accent-ink:#06211c;--mark:#f2b134;--user:#3cc4ae;--user-ink:#06211c;
+  --card1:#122a26;--card2:#121c33;--card3:#2a2416;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Mukta",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
+h1,h2,h3,.brand{font-family:"Poppins","Mukta",sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;position:sticky;top:0;background:var(--bg);z-index:20}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.01em;display:flex;align-items:center}
+.brand i{display:inline-block;width:14px;height:14px;background:linear-gradient(135deg,var(--mark),var(--accent));border-radius:50%;margin-right:8px}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+nav a:hover{color:var(--ink)}
+.themebtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;font-size:14px}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:34px 0 10px}
+.hero h1{font-size:40px;line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:18px;margin:0 0 22px;max-width:46ch}
+.hero .badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.badge{background:var(--card2);border-radius:999px;padding:7px 14px;font-weight:700;font-size:13px;color:var(--accent2)}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap}
+.btn{border:none;border-radius:12px;padding:13px 22px;font-weight:800;font-size:16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:var(--shadow)}
+.btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.hero-art{position:relative;height:300px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);
+  background:linear-gradient(135deg,var(--card1),var(--card2) 60%,var(--card3));display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:80%;height:80%}
+
+.stripe{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:26px 0 36px}
+.stripe .stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
+.stripe .stat b{display:block;font-size:24px;color:var(--accent)}
+.stripe .stat span{color:var(--muted);font-size:13px}
+
+section{padding:30px 0}
+section h2{font-size:26px;margin:0 0 6px}
+section .sub{color:var(--muted);margin:0 0 22px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.scard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:0;cursor:pointer;box-shadow:var(--shadow);
+  overflow:hidden;transition:transform .15s ease; text-align:left}
+.scard:hover{transform:translateY(-4px)}
+.scard .art{height:110px;display:flex;align-items:center;justify-content:center;font-size:44px}
+.scard .body{padding:16px}
+.scard h3{margin:0 0 6px;font-size:17px}
+.scard p{margin:0;color:var(--muted);font-size:14px}
+.scard .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:var(--accent);background:var(--card1);padding:4px 10px;border-radius:999px}
+
+/* Chat / wizard panel */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;margin-top:10px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.panel-head b{font-size:16px}
+.panel-head button{background:none;border:none;color:var(--muted);font-weight:700;cursor:pointer;font-size:13px}
+#log{height:420px;overflow-y:auto;padding:18px 20px;display:flex;flex-direction:column;gap:12px;scroll-behavior:smooth}
+.msg{max-width:82%;padding:13px 16px;border-radius:16px;font-size:15.5px;white-space:pre-wrap}
+.msg.bot{background:var(--card2);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{background:var(--user);color:var(--user-ink);align-self:flex-end;border-bottom-right-radius:4px}
+.card{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.card b{display:block;font-size:15px;margin-bottom:4px}
+.card span{display:block;color:var(--ink);font-size:14.5px;margin-bottom:6px}
+.card small{display:block;color:var(--muted);font-size:12.5px}
+.card ol{margin:6px 0 6px 18px;padding:0;font-size:14px}
+.card a.applybtn{display:inline-block;margin-top:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;text-decoration:none;font-weight:700;font-size:13.5px;padding:9px 14px;border-radius:10px}
+.pill{display:inline-block;background:var(--card3);color:#946200;font-weight:700;font-size:12px;padding:4px 10px;border-radius:999px;margin-bottom:6px}
+.pill.ok{background:var(--card1);color:#0f7b6c}
+.pill.no{background:#ffe7e7;color:#b42323}
+.schemechoices,.optchoices{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.schemechoices button,.optchoices button{border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  border-radius:999px;padding:9px 14px;font-size:14px;cursor:pointer;font-weight:600}
+.schemechoices button:hover,.optchoices button:hover{border-color:var(--accent);color:var(--accent)}
+#tips{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 14px}
+#tips button{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;
+  padding:7px 12px;font-size:13px;cursor:pointer}
+.inputrow{display:flex;gap:10px;padding:14px 20px;border-top:1px solid var(--line)}
+#inp{flex:1;border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:15.5px;background:var(--bg);color:var(--ink)}
+#send{border:none;border-radius:12px;padding:0 20px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:800;cursor:pointer;font-size:15px}
+
+#schemeList{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+#schemeList .litem{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+#schemeList .litem b{display:block;margin-bottom:4px}
+#schemeList .litem span{color:var(--muted);font-size:14px}
+
+.micbtn{border:none;border-radius:12px;width:50px;background:var(--card2);color:var(--ink);font-size:20px;cursor:pointer}
+.micbtn.listening{background:#ff4d4d;color:#fff;animation:pulse 1s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,77,77,.6)}70%{box-shadow:0 0 0 12px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+.headbtns{display:flex;gap:8px;align-items:center}
+.headbtns button{background:var(--card2);border:none;border-radius:999px;padding:6px 12px;color:var(--ink);font-weight:700;font-size:12.5px;cursor:pointer}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:30px 0}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero-art{height:220px;order:-1}
+  .stripe{grid-template-columns:repeat(2,1fr)}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="brand"><i></i>Nyaya Saathi</div>
+  <nav>
+    <a href="#schemes" data-i18n="nav1">Schemes</a>
+    <a href="#chat" data-i18n="nav2">Ask Nyaya Saathi</a>
+  </nav>
+  <button class="themebtn" id="uiLangBtn" title="Language / भाषा">हिंदी</button>
+  <button class="themebtn" id="themeBtn">🌙 Dark</button>
+</header>
+
+<div class="wrap hero">
+  <div>
+    <div class="badges">
+      <span class="badge" data-i18n="badge1">🇮🇳 32 Government Schemes</span>
+      <span class="badge">हिंदी + English</span>
+    </div>
+    <h1 data-i18n="h1">Find the government scheme you actually qualify for.</h1>
+    <p data-i18n="heroP">Tell Nyaya Saathi about yourself in your own words.</p>
+    <div class="btnrow">
+      <a class="btn primary" href="#chat"><span data-i18n="btn1">💬 Start chatting</span></a>
+      <a class="btn ghost" href="#schemes"><span data-i18n="btn2">📋 Browse all schemes</span></a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="80" r="70" fill="var(--card1)"/>
+      <rect x="55" y="60" width="90" height="70" rx="10" fill="var(--surface)" stroke="var(--line)"/>
+      <rect x="65" y="72" width="70" height="8" rx="4" fill="var(--card2)"/>
+      <rect x="65" y="86" width="50" height="8" rx="4" fill="var(--card2)"/>
+      <rect x="65" y="100" width="60" height="8" rx="4" fill="var(--card3)"/>
+      <circle cx="140" cy="48" r="16" fill="var(--mark)"/>
+      <path d="M133 48l5 5 9-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="58" cy="40" r="10" fill="var(--accent2)" opacity=".8"/>
+    </svg>
+  </div>
+</div>
+
+<div class="wrap stripe">
+  <div class="stat"><b>32</b><span data-i18n="st1">Schemes covered</span></div>
+  <div class="stat"><b>2</b><span data-i18n="st2">Languages supported</span></div>
+  <div class="stat"><b>₹0</b><span data-i18n="st3">Cost to use</span></div>
+  <div class="stat"><b>100%</b><span data-i18n="st4">Official apply links</span></div>
+</div>
+
+<section class="wrap" id="schemes">
+  <h2 data-i18n="h2a">Browse schemes</h2>
+  <p class="sub" data-i18n="sub1">Tap a card to check your eligibility step by step, or scroll down and just chat.</p>
+  <div class="cards" id="schemeCards"></div>
+</section>
+
+<section class="wrap" id="chat">
+  <h2 data-i18n="h2b">Ask Nyaya Saathi</h2>
+  <p class="sub" data-i18n="sub2">Type how you'd normally speak — "mai kisan hoon", "beti ki shaadi hai", "loan chahiye" — or pick a scheme above.</p>
+  <div class="panel">
+    <div class="panel-head">
+      <b>Nyaya Saathi</b>
+      <div class="headbtns"><button id="langBtn" title="Voice language">🎤 हिंदी</button><button id="voiceBtn" title="Spoken replies">🔊 Voice: ON</button><button id="restartBtn" data-i18n="restart">↺ Start over</button></div>
+    </div>
+    <div id="log"></div>
+    <div id="tips"></div>
+    <div class="inputrow">
+      <button id="mic" class="micbtn" type="button" aria-label="Speak" title="Tap and speak">🎤</button>
+      <input id="inp" type="text" data-i18n-ph="ph" placeholder="e.g. Main kisan hoon, 2 acre zameen hai" aria-label="Your message" autocomplete="off">
+      <button id="send" data-i18n="send">Send</button>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 data-i18n="h2c">All schemes at a glance</h2>
+  <div id="schemeList"></div>
+</section>
+
+<footer class="wrap" data-i18n="foot">Built for InnoTech Hackathon</footer>
+
+<script>
+var API = (location.protocol === "file:") ? "http://127.0.0.1:8000" : "";
+
+/* ---------- Page language (English / Hindi) ---------- */
+var uiLang = localStorage.getItem("ns-lang") || "en";
+var T = {
+  en:{nav1:"Schemes",nav2:"Ask Nyaya Saathi",badge1:"🇮🇳 32 Government Schemes",h1:"Find the government scheme you actually qualify for.",
+    heroP:"Tell Nyaya Saathi about yourself in your own words — Hindi, English, or mixed. It checks your eligibility step by step and gives you the exact online link to apply.",
+    btn1:"💬 Start chatting",btn2:"📋 Browse all schemes",st1:"Schemes covered",st2:"Languages supported",st3:"Cost to use",st4:"Official apply links",
+    h2a:"Browse schemes",sub1:"Tap a card to check your eligibility step by step, or scroll down and just chat.",
+    h2b:"Ask Nyaya Saathi",sub2:"Type how you would normally speak, like “mai kisan hoon”, “beti ki shaadi hai”, “loan chahiye”, or pick a scheme above.",
+    h2c:"All schemes at a glance",restart:"↺ Start over",send:"Send",ph:"e.g. Main kisan hoon, 2 acre zameen hai",
+    foot:"Built for InnoTech Hackathon · Demo data, not an official government service",
+    dark:"🌙 Dark",light:"☀️ Light",voiceOn:"🔊 Voice: ON",voiceOff:"🔇 Voice: OFF",tag:"Check eligibility →",
+    greet:"Namaste! Tell me about yourself and what you need. Hindi or English both work. Or pick a scheme card above to go step by step.",
+    tips:["I am a farmer with 2 acres","My daughter’s wedding is coming","I run a small shop and need a loan","Need money for hospital treatment"],other:"हिंदी"},
+  hi:{nav1:"योजनाएँ",nav2:"न्याय साथी से पूछें",badge1:"🇮🇳 32 सरकारी योजनाएँ",h1:"आपको जो सरकारी योजना सच में मिल सकती है, उसे खोजें।",
+    heroP:"न्याय साथी को अपनी बात अपनी भाषा में बताइए, हिंदी, अंग्रेज़ी या मिली-जुली। यह कदम-दर-कदम आपकी पात्रता जाँचता है और आवेदन का सही ऑनलाइन लिंक देता है।",
+    btn1:"💬 बातचीत शुरू करें",btn2:"📋 सारी योजनाएँ देखें",st1:"योजनाएँ शामिल",st2:"भाषाएँ उपलब्ध",st3:"इस्तेमाल का खर्च",st4:"आधिकारिक आवेदन लिंक",
+    h2a:"योजनाएँ देखें",sub1:"किसी कार्ड पर टैप करके कदम-दर-कदम अपनी पात्रता जाँचें, या नीचे जाकर सीधे बातचीत करें।",
+    h2b:"न्याय साथी से पूछें",sub2:"जैसे बोलते हैं वैसे लिखिए, जैसे “मैं किसान हूँ”, “बेटी की शादी है”, “लोन चाहिए”, या ऊपर से कोई योजना चुनिए।",
+    h2c:"सभी योजनाएँ एक नज़र में",restart:"↺ दोबारा शुरू करें",send:"भेजें",ph:"जैसे: मैं किसान हूँ, 2 एकड़ ज़मीन है",
+    foot:"इनोटेक हैकाथॉन के लिए बनाया गया · डेमो डेटा, यह सरकारी सेवा नहीं है",
+    dark:"🌙 गहरा",light:"☀️ हल्का",voiceOn:"🔊 आवाज़: चालू",voiceOff:"🔇 आवाज़: बंद",tag:"पात्रता जाँचें →",
+    greet:"नमस्ते! अपने बारे में और अपनी ज़रूरत बताइए, हिंदी या अंग्रेज़ी दोनों चलेंगी। या ऊपर से कोई योजना चुनिए।",
+    tips:["मैं किसान हूँ, 2 एकड़ ज़मीन है","मेरी बेटी की शादी है","मेरी छोटी दुकान है, लोन चाहिए","इलाज के लिए पैसे चाहिए"],other:"English"}
+};
+var NAMES_HI = {pmkisan:"पीएम-किसान सम्मान निधि",pmjay:"आयुष्मान भारत (PM-JAY)",pmay:"प्रधानमंत्री आवास योजना",
+  ssy:"सुकन्या समृद्धि योजना",nsp:"राष्ट्रीय छात्रवृत्ति पोर्टल",mudra:"प्रधानमंत्री मुद्रा योजना",apy:"अटल पेंशन योजना",
+  ujjwala:"प्रधानमंत्री उज्ज्वला योजना",pmjjby:"पीएम जीवन ज्योति बीमा योजना",pmsby:"पीएम सुरक्षा बीमा योजना",pmfby:"पीएम फसल बीमा योजना",kcc:"किसान क्रेडिट कार्ड",pmvishwakarma:"पीएम विश्वकर्मा योजना",pmmvy:"पीएम मातृ वंदना योजना",ignoaps:"इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन",pmjdy:"प्रधानमंत्री जन धन योजना",
+  standup:"स्टैंड-अप इंडिया",nrlm:"दीनदयाल अंत्योदय (महिला स्वयं सहायता समूह)",svanidhi:"पीएम स्वनिधि (ठेला-रेहड़ी वाले)",vidyalaxmi:"पीएम विद्यालक्ष्मी (एजुकेशन लोन)",ddugky:"डीडीयू-जीकेवाई (मुफ़्त स्किल ट्रेनिंग)",mgnrega:"मनरेगा (100 दिन का काम)",nfsa:"राशन कार्ड (खाद्य सुरक्षा)",udid:"यूडीआईडी कार्ड (दिव्यांग)",ayvvy:"आयुष्मान वय वंदना (70+)",
+  pmkmy:"पीएम किसान मानधन योजना",eshram:"ई-श्रम (असंगठित कामगार)",pmksy:"पीएम कृषि सिंचाई योजना",pmsym:"पीएम श्रम योगी मानधन",ignwps:"इंदिरा गांधी विधवा पेंशन",pmmsy:"पीएम मत्स्य संपदा योजना",pmegp:"पीएमईजीपी (अपना उद्यम शुरू करें)"};
+function nm(s, hindi){ return (hindi && NAMES_HI[s.id]) ? NAMES_HI[s.id] : s.name; }
+function tr(k){ return T[uiLang][k]; }
+function isHi(text){ return uiLang === "hi" || /[\u0900-\u097F]/.test(text || ""); }
+
+var log = document.getElementById("log");
+var inp = document.getElementById("inp");
+var allSchemes = [];
+var ICONS = {pmkisan:"🌾", pmjay:"🏥", pmay:"🏠", ssy:"👧", nsp:"🎓", mudra:"🏪", apy:"👵", ujjwala:"🔥", pmjjby:"🛡️", pmsby:"🩹", pmfby:"🌧️", kcc:"💳", pmvishwakarma:"🛠️", pmmvy:"🤱", ignoaps:"👴", pmjdy:"🏦", standup:"🚀", nrlm:"👩‍👩‍👧", svanidhi:"🛒", vidyalaxmi:"🎓", ddugky:"🧰", mgnrega:"⛏️", nfsa:"🍚", udid:"♿", ayvvy:"🧓", pmkmy:"🌾", eshram:"👷", pmksy:"💧", pmsym:"🧑‍🏭", ignwps:"👩", pmmsy:"🐟", pmegp:"🏭"};
+var ART_BG = {pmkisan:"var(--card1)", pmjay:"var(--card3)", pmay:"var(--card2)", ssy:"var(--card3)",
+              nsp:"var(--card2)", mudra:"var(--card1)", apy:"var(--card2)", ujjwala:"var(--card1)", pmjjby:"var(--card3)", pmsby:"var(--card2)", pmfby:"var(--card1)", kcc:"var(--card3)", pmvishwakarma:"var(--card2)", pmmvy:"var(--card3)", ignoaps:"var(--card1)", pmjdy:"var(--card2)", standup:"var(--card1)", nrlm:"var(--card3)", svanidhi:"var(--card2)", vidyalaxmi:"var(--card1)", ddugky:"var(--card3)", mgnrega:"var(--card2)", nfsa:"var(--card1)", udid:"var(--card3)", ayvvy:"var(--card2)", pmkmy:"var(--card3)", eshram:"var(--card1)", pmksy:"var(--card2)", pmsym:"var(--card3)", ignwps:"var(--card1)", pmmsy:"var(--card2)", pmegp:"var(--card3)"};
+
+function add(cls, text){
+  var d = document.createElement("div");
+  d.className = "msg " + cls;
+  d.textContent = text;
+  log.appendChild(d);
+  log.scrollTop = log.scrollHeight;
+  if(cls === "bot") speak(text);
+  return d;
+}
+
+function esc(t){ return (t==null?"":String(t)); }
+
+/* ---------- Theme ---------- */
+var themeBtn = document.getElementById("themeBtn");
+function applyTheme(t){
+  document.documentElement.setAttribute("data-theme", t);
+  themeBtn.textContent = t === "dark" ? tr("light") : tr("dark");
+  localStorage.setItem("ns-theme", t);
+}
+applyTheme(localStorage.getItem("ns-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+themeBtn.onclick = function(){
+  applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+};
+
+
+/* ---------- Voice: speak replies + microphone input ---------- */
+var voiceOn = true, userTouched = false, voices = [];
+document.addEventListener("click", function(){ userTouched = true; }, {once:true});
+document.addEventListener("keydown", function(){ userTouched = true; }, {once:true});
+if("speechSynthesis" in window){
+  voices = speechSynthesis.getVoices();
+  speechSynthesis.onvoiceschanged = function(){ voices = speechSynthesis.getVoices(); };
+}
+function pickVoice(lang){
+  var pre = lang.slice(0,2);
+  return voices.find(function(v){ return v.lang === lang; }) ||
+         voices.find(function(v){ return v.lang && v.lang.slice(0,2) === pre; }) || null;
+}
+function speak(text){
+  if(!voiceOn || !userTouched || !("speechSynthesis" in window) || !text) return;
+  var lang = detectHindi(text) ? "hi-IN" : "en-IN";
+  var u = new SpeechSynthesisUtterance(text);
+  u.lang = lang; u.rate = 0.95;
+  var v = pickVoice(lang); if(v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+var voiceBtn = document.getElementById("voiceBtn");
+function updateVoiceBtn(){ voiceBtn.textContent = voiceOn ? tr("voiceOn") : tr("voiceOff"); }
+voiceBtn.onclick = function(){
+  voiceOn = !voiceOn;
+  updateVoiceBtn();
+  if(!voiceOn && "speechSynthesis" in window) speechSynthesis.cancel();
+};
+
+var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+var micBtn = document.getElementById("mic"), langBtn = document.getElementById("langBtn");
+var micLang = "hi-IN", rec = null, listening = false;
+langBtn.onclick = function(){
+  micLang = micLang === "hi-IN" ? "en-IN" : "hi-IN";
+  langBtn.textContent = micLang === "hi-IN" ? "🎤 हिंदी" : "🎤 English";
+};
+if(!SR){
+  micBtn.style.display = "none"; langBtn.style.display = "none";
+} else {
+  micBtn.onclick = function(){
+    if("speechSynthesis" in window) speechSynthesis.cancel();
+    if(listening && rec){ rec.stop(); return; }
+    rec = new SR();
+    rec.lang = micLang; rec.interimResults = true; rec.maxAlternatives = 1; rec.continuous = false;
+    var finalText = "";
+    rec.onstart = function(){ listening = true; micBtn.classList.add("listening"); inp.placeholder = micLang === "hi-IN" ? "सुन रहा हूँ… बोलिए" : "Listening… speak now"; };
+    rec.onresult = function(e){
+      var t = "";
+      for(var i = e.resultIndex; i < e.results.length; i++){
+        t += e.results[i][0].transcript;
+        if(e.results[i].isFinal) finalText = t;
+      }
+      inp.value = t;
+    };
+    rec.onerror = function(e){
+      var msg = (e.error === "not-allowed" || e.error === "service-not-allowed")
+        ? "Microphone permission is blocked. Click the lock icon next to the address bar and allow the microphone."
+        : (e.error === "no-speech" ? "I didn’t hear anything. Tap the mic and try again." : "Voice input problem: " + e.error);
+      add("bot", msg);
+    };
+    rec.onend = function(){
+      listening = false; micBtn.classList.remove("listening");
+      inp.placeholder = "e.g. Main kisan hoon, 2 acre zameen hai";
+      var t = (finalText || inp.value).trim();
+      if(t) send(t);
+    };
+    try { rec.start(); } catch(err){ console.error(err); }
+  };
+}
+
+/* ---------- Conversation state ---------- */
+var memory = null, shown = [], last = [];
+var hindiMode = false;
+
+function detectHindi(text){ return /[\u0900-\u097F]/.test(text); }
+
+/* ---------- Normal free-text chat (eligibility by keywords) ---------- */
+function showSchemes(hindi, schemes, kind){
+  if(kind === "apply"){ showApply(hindi, schemes); return; }
+  if(kind === "which_scheme"){
+    add("bot", hindi ? "किस योजना का आवेदन चाहिए? योजना का नाम लिखिए, जैसे PM-Kisan या स्कॉलरशिप।" : "Which scheme do you want to apply for? Type its name, e.g. PM-Kisan or Scholarship.");
+    return;
+  }
+  if(kind === "ask_details"){
+    add("bot", hindi
+      ? "अभी के लिए मेरे पास आपकी जानकारी के हिसाब से और योजनाएं नहीं हैं। अपनी उम्र और सालाना आमदनी बताइए (जैसे: 45 साल, 2 लाख), या कोई और ज़रूरत लिखिए: इलाज, घर, बेटी, पढ़ाई, लोन।"
+      : "I have no more schemes for what you told me. Share your age and yearly income (e.g. 45 years, 2 lakh), or another need: health, house, daughter, education, loan.");
+    return;
+  }
+  if(!schemes.length){
+    add("bot", hindi
+      ? "मुझे आपकी स्थिति समझ नहीं आई। बताइए आप किसान हैं, छात्र हैं, दुकान चलाते हैं, या इलाज, घर या बेटी के लिए मदद चाहिए?"
+      : "I couldn’t match that yet. Tell me if you are a farmer, a student, run a shop, or need help with health, a house or a daughter’s future.");
+    return;
+  }
+  var intro = (kind === "more" || kind === "all")
+    ? (hindi ? "ये कुछ और योजनाएं भी आपके काम की हो सकती हैं:" : "Here are a few more schemes that may help you:")
+    : (hindi ? "आप इन योजनाओं के लिए पात्र हो सकते हैं। किसी एक पर टैप करें ताकि मैं आपकी पूरी पात्रता जाँच लूँ:" : "You may be eligible for these schemes. Tap one so I can fully check your eligibility:");
+  var m = add("bot", intro);
+  schemes.forEach(function(s){ if(shown.indexOf(s.name) < 0) shown.push(s.name); });
+  schemes.forEach(function(s){
+    var c = document.createElement("div"); c.className = "card";
+    var b = document.createElement("b"); b.textContent = (ICONS[s.id]||"📄") + " " + nm(s, hindi);
+    var p = document.createElement("span"); p.textContent = hindi ? s.benefit_hi : s.benefit_en;
+    var sm = document.createElement("small");
+    sm.textContent = (hindi ? "ज़रूरी कागज़ात: " : "Documents needed: ") + s.docs.join(", ");
+    c.appendChild(b); c.appendChild(p); c.appendChild(sm);
+    var btn = document.createElement("button");
+    btn.className = "btn primary"; btn.style.marginTop = "10px"; btn.style.fontSize = "13.5px"; btn.style.padding = "9px 14px";
+    btn.textContent = hindi ? "पूरी पात्रता जाँचें →" : "Check full eligibility →";
+    btn.onclick = function(){ startWizard(s.id, hindi); };
+    c.appendChild(btn);
+    m.appendChild(c);
+  });
+  log.scrollTop = log.scrollHeight;
+  schemes.forEach(function(s){ speak(s.name + ". " + (hindi ? s.benefit_hi : s.benefit_en)); });
+}
+
+function showApply(hindi, schemes){
+  schemes.forEach(function(s){
+    var a = s.apply;
+    var m = add("bot", (hindi ? "आवेदन कैसे करें: " : "How to apply: ") + nm(s, hindi));
+    if(!a){
+      var note0 = document.createElement("div"); note0.className = "card";
+      note0.textContent = hindi ? "इस योजना के आवेदन की जानकारी अभी डेटा में नहीं है।" : "Application info for this scheme is missing from the data.";
+      m.appendChild(note0);
+      return;
+    }
+    var c = document.createElement("div"); c.className = "card";
+    if(!a.online){
+      var note = document.createElement("span");
+      note.textContent = hindi ? "इसके लिए ऑनलाइन फॉर्म नहीं है, यह खुद जाकर होता है।" : "There is no online form for this one. It is done in person.";
+      c.appendChild(note);
+    }
+    var ol = document.createElement("ol");
+    (hindi ? a.hi : a.en).forEach(function(t){ var li = document.createElement("li"); li.textContent = t; ol.appendChild(li); });
+    c.appendChild(ol);
+    var link = document.createElement("a"); link.className = "applybtn";
+    link.href = a.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+    link.textContent = (hindi ? "🔗 आधिकारिक वेबसाइट खोलें" : "🔗 Open official website");
+    c.appendChild(link);
+    var sm = document.createElement("small"); sm.style.display = "block"; sm.style.marginTop = "8px";
+    sm.textContent = (hindi ? "ज़रूरी कागज़ात: " : "Documents needed: ") + s.docs.join(", ");
+    c.appendChild(sm);
+    m.appendChild(c);
+    speak((hindi ? a.hi : a.en).join(" "));
+  });
+  log.scrollTop = log.scrollHeight;
+}
+
+function send(text){
+  text = (text || inp.value).trim();
+  if(!text) return;
+  if("speechSynthesis" in window) speechSynthesis.cancel();
+  if(wizard){ wizardAnswer(text); return; }
+  add("me", text);
+  inp.value = "";
+  var hindi = isHi(text);
+  hindiMode = hindi;
+  fetch(API + "/chat", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({message:text, profile:memory, shown:shown, last:last})})
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(d){ memory = d.profile; last = d.schemes.map(function(x){ return x.name; }); showSchemes(hindi, d.schemes, d.kind); })
+    .catch(function(){ add("bot", "Server not reachable. Start the backend and try again."); });
+}
+
+/* ---------- Guided wizard: pick a scheme, answer questions one by one ---------- */
+var wizard = null; // {schemeId, hindi, questions, idx, answers}
+
+function startWizard(schemeId, hindi){
+  fetch(API + "/scheme/" + schemeId).then(function(r){ return r.json(); }).then(function(s){
+    wizard = {schemeId: schemeId, hindi: hindi, scheme: s, idx: 0, answers: {}};
+    add("bot", (hindi ? "ठीक है, चलिए " : "Great, let's check ") + s.name + (hindi ? " के लिए आपकी पात्रता जाँचते हैं। कुछ छोटे सवाल पूछूँगा।" : " for you. I'll ask a few quick questions."));
+    askNext();
+  });
+}
+
+function askNext(){
+  var qs = wizard.scheme.questions;
+  if(wizard.idx >= qs.length){ finishWizard(); return; }
+  var q = qs[wizard.idx];
+  var hindi = wizard.hindi;
+  var m = add("bot", hindi ? q.hi : q.en);
+  if(["land","ration_card","owns_house","studying","gender","bank_account"].indexOf(q.field) >= 0){
+    var box = document.createElement("div"); box.className = "optchoices";
+    [["yes", hindi?"हाँ":"Yes"], ["no", hindi?"नहीं":"No"]].forEach(function(pair){
+      var btn = document.createElement("button");
+      btn.textContent = pair[1];
+      btn.onclick = function(){ wizardAnswer(pair[0] === "yes" ? (hindi?"हाँ":"yes") : (hindi?"नहीं":"no")); };
+      box.appendChild(btn);
+    });
+    m.appendChild(box);
+  }
+}
+
+function wizardAnswer(text){
+  add("me", text);
+  var q = wizard.scheme.questions[wizard.idx];
+  wizard.answers[q.field] = text;
+  wizard.idx++;
+  askNext();
+}
+
+function finishWizard(){
+  var hindi = wizard.hindi;
+  fetch(API + "/scheme/check", {method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({scheme_id: wizard.schemeId, answers: wizard.answers})})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var s = d.scheme;
+      var m = add("bot", hindi ? "नतीजा तैयार है 👇" : "Here's your result 👇");
+      var c = document.createElement("div"); c.className = "card";
+      var pill = document.createElement("span"); pill.className = "pill " + (d.eligible ? "ok" : "no");
+      pill.textContent = d.eligible ? (hindi ? "✅ आप पात्र लग रहे हैं" : "✅ You look eligible") : (hindi ? "❌ अभी पात्र नहीं लग रहे" : "❌ Not eligible right now");
+      c.appendChild(pill);
+      var b = document.createElement("b"); b.textContent = (ICONS[s.id]||"📄") + " " + nm(s, hindi);
+      c.appendChild(b);
+      var p = document.createElement("span"); p.textContent = hindi ? s.benefit_hi : s.benefit_en;
+      c.appendChild(p);
+      if(!d.eligible){
+        var ul = document.createElement("ul"); ul.style.margin = "6px 0 6px 18px"; ul.style.color = "#b42323"; ul.style.fontSize = "14px";
+        (hindi ? d.reasons_hi : d.reasons_en).forEach(function(t){ var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+        c.appendChild(ul);
+      }
+      var sm = document.createElement("small"); sm.style.display = "block"; sm.style.margin = "6px 0";
+      sm.textContent = (hindi ? "ज़रूरी कागज़ात: " : "Documents needed: ") + s.docs.join(", ");
+      c.appendChild(sm);
+      if(d.eligible && s.apply){
+        var ol = document.createElement("ol");
+        (hindi ? s.apply.hi : s.apply.en).forEach(function(t){ var li = document.createElement("li"); li.textContent = t; ol.appendChild(li); });
+        c.appendChild(ol);
+        var link = document.createElement("a"); link.className = "applybtn";
+        link.href = s.apply.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+        link.textContent = hindi ? "🔗 आधिकारिक वेबसाइट खोलें और आवेदन करें" : "🔗 Open official website and apply";
+        c.appendChild(link);
+      }
+      m.appendChild(c);
+      speak(pill.textContent.replace(/[✅❌]/g,"") + ". " + (d.eligible ? "" : (hindi ? d.reasons_hi : d.reasons_en).join(" ")));
+      wizard = null;
+      var again = add("bot", hindi ? "कोई और योजना देखनी है? ऊपर से चुन लीजिए, या कुछ भी लिख दीजिए।" : "Want to check another scheme? Pick one above, or just type anything.");
+    });
+}
+
+document.getElementById("restartBtn").onclick = function(){
+  wizard = null; memory = null; shown = []; last = [];
+  log.innerHTML = "";
+  greet();
+};
+
+document.getElementById("send").onclick = function(){ send(); };
+inp.addEventListener("keydown", function(e){ if(e.key === "Enter") send(); });
+
+function greet(){ add("bot", tr("greet")); }
+
+var tipBox = document.getElementById("tips");
+function renderTips(){
+  tipBox.innerHTML = "";
+  tr("tips").forEach(function(t){
+    var b = document.createElement("button"); b.type = "button"; b.textContent = t;
+    b.onclick = function(){ send(t); }; tipBox.appendChild(b);
+  });
+}
+
+/* ---------- Load schemes ---------- */
+function renderSchemes(){
+  var hi = uiLang === "hi";
+  var cardBox = document.getElementById("schemeCards"); cardBox.innerHTML = "";
+  allSchemes.forEach(function(s){
+    var c = document.createElement("button"); c.className = "scard"; c.type = "button";
+    var art = document.createElement("div"); art.className = "art"; art.style.background = ART_BG[s.id] || "var(--card2)";
+    art.textContent = ICONS[s.id] || "📄";
+    var body = document.createElement("div"); body.className = "body";
+    var h = document.createElement("h3"); h.textContent = nm(s, hi);
+    var p = document.createElement("p"); p.textContent = hi ? s.benefit_hi : s.benefit_en;
+    var tag = document.createElement("span"); tag.className = "tag"; tag.textContent = tr("tag");
+    body.appendChild(h); body.appendChild(p); body.appendChild(tag);
+    c.appendChild(art); c.appendChild(body);
+    c.onclick = function(){
+      document.getElementById("chat").scrollIntoView({behavior:"smooth", block:"start"});
+      setTimeout(function(){ startWizard(s.id, uiLang === "hi" || hindiMode); }, 350);
+    };
+    cardBox.appendChild(c);
+  });
+  var box = document.getElementById("schemeList"); box.innerHTML = "";
+  allSchemes.forEach(function(s){
+    var d = document.createElement("div"); d.className = "litem";
+    var b = document.createElement("b"); b.textContent = (ICONS[s.id]||"📄") + " " + nm(s, hi);
+    var sp = document.createElement("span"); sp.textContent = hi ? s.benefit_hi : s.benefit_en;
+    d.appendChild(b); d.appendChild(sp); box.appendChild(d);
+  });
+}
+
+function setUiLang(l){
+  uiLang = l;
+  try { localStorage.setItem("ns-lang", l); } catch(e){}
+  document.documentElement.lang = l === "hi" ? "hi" : "en";
+  document.querySelectorAll("[data-i18n]").forEach(function(el){ el.textContent = tr(el.getAttribute("data-i18n")); });
+  document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ el.placeholder = tr(el.getAttribute("data-i18n-ph")); });
+  document.getElementById("uiLangBtn").textContent = tr("other");
+  applyTheme(document.documentElement.getAttribute("data-theme") || "light");
+  updateVoiceBtn();
+  micLang = l === "hi" ? "hi-IN" : "en-IN";
+  langBtn.textContent = micLang === "hi-IN" ? "🎤 हिंदी" : "🎤 English";
+  renderTips();
+  renderSchemes();
+  if(log.children.length <= 1 && !wizard){ log.innerHTML = ""; greet(); }
+}
+document.getElementById("uiLangBtn").onclick = function(){ setUiLang(uiLang === "hi" ? "en" : "hi"); };
+
+fetch(API + "/schemes").then(function(r){ return r.json(); }).then(function(list){
+  allSchemes = list;
+  renderSchemes();
+});
+
+setUiLang(uiLang);
+</script>
+</body>
+</html>
